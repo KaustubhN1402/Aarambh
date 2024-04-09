@@ -1,0 +1,264 @@
+.header {
+  background-color: #0c4278; /* Blue shade header bar */
+  color: #fff; /* Text color */
+  padding: 40px 20px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  width: 50px; /* Adjust image width as needed */
+  height: 50px; /* Adjust image height as needed */
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation ul li {
+  margin-left: 20px; /* Adjust space between menu items */
+}
+
+.navigation ul li a {
+  color: #fff; /* Text color */
+  text-decoration: none;
+}
+
+.navigation ul li a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 34px;
+}
+
+.subtitle {
+  font-size: 26px;
+  color: #666;
+}
+
+/* Existing styles remain unchanged */
+
+.prediction-form-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.prediction-form-box {
+  display: inline-block;
+  width: 40%; /* Adjust width of the box as needed */
+  padding: 20px;
+  background-color: #f0f0f0; /* Background color for the box */
+  border: 1px solid #ccc;
+}
+
+.prediction-form-box h3 {
+  margin-top: 0;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px); /* Adjust width of input fields */
+  padding: 8px;
+  margin-bottom: 10px;
+}
+input[type="number"] {
+  width: calc(100% - 20px); /* Adjust width of input fields */
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  padding: 5px 5px;
+  background-color: #0050ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* --------------------------- */
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.select-wrapper select {
+  width: calc(100% - 20px); /* Adjust width of select dropdown */
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  padding: 8px; /* Adjust padding of button */
+  background-color: #0050ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: calc(100% - 20px); /* Adjust width of button */
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+/* Code for College List display */
+
+.college-list {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.college-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.college-list th, .college-list td {
+  border: 1px solid #ddd;
+  
+  padding: 8px;
+}
+
+.college-list th {
+  background-color: #004080;
+
+}
+
+.pagination {
+  margin-top: 10px;
+}
+
+.pagination button {
+  padding: 8px 15px;
+  background-color: #0050ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.pagination button:last-child {
+  margin-right: 0;
+}
+
+
+/* ------------------------- */
+
+.announcement-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Set margin-top to 10px */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+.announcement-button {
+  background-color: #dc3545; /* Red background color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-top-left-radius: 5px; /* Match border-radius of announcement container */
+  border-bottom-left-radius: 5px;
+}
+
+.announcement-bar {
+  background-color: #f0f0f0; /* Light grey background color */
+  color: #000; /* Black text color */
+  padding: 10px;
+  overflow: hidden; /* Prevents overflow of the marquee content */
+  flex-grow: 1; /* Allow the announcement bar to grow to fill available space */
+}
+
+/* Adjust width as needed to cover the entire width of the homepage */
+.announcement-bar marquee {
+  width: 100%; /* Covers the entire width of the parent container */
+  height: 100%;
+}
+
+/* Adjust the scroll speed as needed */
+.announcement-bar marquee {
+  animation: marquee 20s linear infinite; /* Adjust the duration (20s) to slow down the speed */
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* ---------------------------------------------Image in box */
+
+.row {
+  display: flex;
+}
+
+.container {
+  flex: 1;
+  padding: 10px;
+  height: 400px; /* Set height of containers to 200px */
+  position: relative; /* Necessary for absolute positioning of image */
+}
+
+.left-container {
+  background-color: #acb5ba;
+    flex: 2; /* Set the flex value to make it slightly wider */
+}
+
+.right-container {
+  flex: 1;
+  background-color: #acb5ba;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 20px;
+ 
+  /* Styles for right container */
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.button img {
+  width: 80px; /* Adjust image width as needed */
+  height: 80px; /* Adjust image height as needed */
+  margin-left: 100px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+
+.left-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

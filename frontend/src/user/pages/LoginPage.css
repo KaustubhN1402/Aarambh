@@ -1,0 +1,60 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  width: 400px;
+  /* Adjust width as needed */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-box h2 {
+  text-align: center;
+  font-size: 24px;
+  /* Increase font size */
+  font-weight: bold;
+  /* Make the heading bold */
+  margin-bottom: 20px;
+  /* Add margin at the bottom */
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box input,
+.login-box button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  /* Make all inputs take up 100% width */
+}
+
+.login-box input.invalid {
+  border-color: red;
+}
+
+.login-box .password-field {
+  position: relative;
+}
+
+.login-box .password-field .eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.login-box a {
+  color: blue;
+  /* Make the sign up link blue */
+}

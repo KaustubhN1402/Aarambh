@@ -1,0 +1,77 @@
+/* CSS for the ImportantDates component */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  padding: 1rem;
+  /* Adjusted padding for better spacing */
+  text-align: left;
+}
+
+th {
+  text-align: center;
+  background-color: #004080;
+  /* Dark blue background color */
+  color: #ffffff;
+  /* White text color */
+  font-size: 1.2rem;
+  /* Adjusted font size for table headers */
+}
+
+th:nth-child(1),
+td:nth-child(1),
+th:nth-child(3),
+td:nth-child(3),
+th:nth-child(4),
+td:nth-child(4) {
+  text-align: center;
+  /* Centering text in specified columns */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 60%;
+  /* Width of the second column */
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* CSS for the footer */
+.foot {
+  background-color: #004080;
+  /* Dark blue background color */
+  color: #ffffff;
+  /* White text color */
+  padding: 1.5rem;
+  /* Adjusted padding for better spacing */
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  /* Adjusted font size for company name */
+  margin-bottom: 0.5rem;
+  /* Adjusted margin for company name */
+}
+
+.company-address {
+  font-size: 1rem;
+  /* Adjusted font size for company address */
+  margin-top: 0.5rem;
+  /* Adjusted margin for company address */
+}
