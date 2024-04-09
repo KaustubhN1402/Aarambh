@@ -26,9 +26,9 @@ function App() {
         <Route path="/:id/important" element={<ImportantDates />} />
         <Route path="/:id/jee" element={<JEEmain />} />
         <Route path="./search_college" element={<SearchCollege />} />
-        <Route path="/:id/exam_info" element={<Info />} />
+        <Route path="./exam_info" element={<Info />} />
         <Route path="/:id/mht_cet" element={<MHTCETInfo />} />
-        <Route path="/college_details/:id" element={<CollegeDetails />} />
+        <Route path="./college_details" element={<CollegeDetails />} />
         <Route path="/admin/:id" element={<AdminHomePage />} />
         <Route path="/add_date" element={<AdminDates/> } />
         {/* <Route path="/admin/college_edit/:id" element={<EditCollege/>} /> */}
